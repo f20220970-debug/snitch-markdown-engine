@@ -1,0 +1,200 @@
+{
+ "transaction_lines": 541909,
+ "skus_analysed": 1966,
+ "sku_weeks": 79349,
+ "weeks": 53,
+ "weeks_train": 40,
+ "weeks_held_out": 13,
+ "held_out_sku_weeks": 21572,
+ "error_reduction_vs_sku_average_pct": 19.264,
+ "elasticity": {
+  "skus_estimated": 1923,
+  "median": -2.64,
+  "p10": -5.47,
+  "p90": -1.1,
+  "share_negative_pct": 97.7
+ },
+ "skus_in_backtest": 1939,
+ "policy_comparison": [
+  {
+   "policy": "no markdown",
+   "avg_discount_pct": 0.0,
+   "skus_marked_down_pct": 0.0,
+   "gross_profit": 282678.99,
+   "units_sold": 580751.68,
+   "sell_through_pct": 61.8,
+   "leftover_units": 358913.32,
+   "gross_profit_per_sku": 145.79,
+   "vs_best_flat_per_sku": -69.57,
+   "vs_no_markdown_per_sku": 0.0
+  },
+  {
+   "policy": "flat 20% on everything",
+   "avg_discount_pct": 20.0,
+   "skus_marked_down_pct": 100.0,
+   "gross_profit": 417583.23,
+   "units_sold": 889185.36,
+   "sell_through_pct": 94.63,
+   "leftover_units": 50479.64,
+   "gross_profit_per_sku": 215.36,
+   "vs_best_flat_per_sku": 0.0,
+   "vs_no_markdown_per_sku": 69.57
+  },
+  {
+   "policy": "flat 40% on everything",
+   "avg_discount_pct": 40.0,
+   "skus_marked_down_pct": 100.0,
+   "gross_profit": 85792.34,
+   "units_sold": 932783.16,
+   "sell_through_pct": 99.27,
+   "leftover_units": 6881.84,
+   "gross_profit_per_sku": 44.25,
+   "vs_best_flat_per_sku": -171.11,
+   "vs_no_markdown_per_sku": -101.54
+  },
+  {
+   "policy": "rule of thumb: 30% on slow movers",
+   "avg_discount_pct": 30.0,
+   "skus_marked_down_pct": 100.0,
+   "gross_profit": 269872.83,
+   "units_sold": 921817.47,
+   "sell_through_pct": 98.1,
+   "leftover_units": 17847.53,
+   "gross_profit_per_sku": 139.18,
+   "vs_best_flat_per_sku": -76.18,
+   "vs_no_markdown_per_sku": -6.6
+  },
+  {
+   "policy": "markdown engine (fitted elasticity)",
+   "avg_discount_pct": 14.57,
+   "skus_marked_down_pct": 93.81,
+   "gross_profit": 506736.07,
+   "units_sold": 868461.93,
+   "sell_through_pct": 92.42,
+   "leftover_units": 71203.07,
+   "gross_profit_per_sku": 261.34,
+   "vs_best_flat_per_sku": 45.98,
+   "vs_no_markdown_per_sku": 115.55
+  }
+ ],
+ "sensitivity": [
+  {
+   "true_elasticity_vs_fitted": "60%",
+   "engine_profit_per_sku": 187.22,
+   "vs_best_flat_per_sku": 14.89,
+   "engine_avg_discount_pct": 14.57
+  },
+  {
+   "true_elasticity_vs_fitted": "80%",
+   "engine_profit_per_sku": 230.49,
+   "vs_best_flat_per_sku": 31.84,
+   "engine_avg_discount_pct": 14.57
+  },
+  {
+   "true_elasticity_vs_fitted": "100%",
+   "engine_profit_per_sku": 261.34,
+   "vs_best_flat_per_sku": 45.98,
+   "engine_avg_discount_pct": 14.57
+  },
+  {
+   "true_elasticity_vs_fitted": "120%",
+   "engine_profit_per_sku": 274.5,
+   "vs_best_flat_per_sku": 48.11,
+   "engine_avg_discount_pct": 14.57
+  },
+  {
+   "true_elasticity_vs_fitted": "140%",
+   "engine_profit_per_sku": 279.4,
+   "vs_best_flat_per_sku": 45.15,
+   "engine_avg_discount_pct": 14.57
+  }
+ ],
+ "scenarios": [
+  {
+   "weeks_left": 4,
+   "weeks_of_stock": 8,
+   "engine_profit_per_sku": 120.44,
+   "no_markdown_profit_per_sku": 30.79,
+   "best_flat_profit_per_sku": 105.63,
+   "engine_avg_discount_pct": 20.05,
+   "engine_sell_through_pct": 89.82
+  },
+  {
+   "weeks_left": 4,
+   "weeks_of_stock": 13,
+   "engine_profit_per_sku": 66.35,
+   "no_markdown_profit_per_sku": -108.73,
+   "best_flat_profit_per_sku": 24.5,
+   "engine_avg_discount_pct": 30.44,
+   "engine_sell_through_pct": 84.1
+  },
+  {
+   "weeks_left": 4,
+   "weeks_of_stock": 20,
+   "engine_profit_per_sku": -34.89,
+   "no_markdown_profit_per_sku": -304.0,
+   "best_flat_profit_per_sku": -75.89,
+   "engine_avg_discount_pct": 37.69,
+   "engine_sell_through_pct": 79.13
+  },
+  {
+   "weeks_left": 8,
+   "weeks_of_stock": 8,
+   "engine_profit_per_sku": 261.03,
+   "no_markdown_profit_per_sku": 247.65,
+   "best_flat_profit_per_sku": 159.19,
+   "engine_avg_discount_pct": 2.46,
+   "engine_sell_through_pct": 98.34
+  },
+  {
+   "weeks_left": 8,
+   "weeks_of_stock": 13,
+   "engine_profit_per_sku": 261.34,
+   "no_markdown_profit_per_sku": 145.79,
+   "best_flat_profit_per_sku": 215.36,
+   "engine_avg_discount_pct": 14.57,
+   "engine_sell_through_pct": 92.42
+  },
+  {
+   "weeks_left": 8,
+   "weeks_of_stock": 20,
+   "engine_profit_per_sku": 202.06,
+   "no_markdown_profit_per_sku": -49.48,
+   "best_flat_profit_per_sku": 166.91,
+   "engine_avg_discount_pct": 25.09,
+   "engine_sell_through_pct": 87.19
+  },
+  {
+   "weeks_left": 12,
+   "weeks_of_stock": 8,
+   "engine_profit_per_sku": 287.65,
+   "no_markdown_profit_per_sku": 287.65,
+   "best_flat_profit_per_sku": 159.81,
+   "engine_avg_discount_pct": 0.0,
+   "engine_sell_through_pct": 100.0
+  },
+  {
+   "weeks_left": 12,
+   "weeks_of_stock": 13,
+   "engine_profit_per_sku": 400.26,
+   "no_markdown_profit_per_sku": 364.94,
+   "best_flat_profit_per_sku": 256.84,
+   "engine_avg_discount_pct": 3.88,
+   "engine_sell_through_pct": 97.68
+  },
+  {
+   "weeks_left": 12,
+   "weeks_of_stock": 20,
+   "engine_profit_per_sku": 389.62,
+   "no_markdown_profit_per_sku": 205.04,
+   "best_flat_profit_per_sku": 324.47,
+   "engine_avg_discount_pct": 15.17,
+   "engine_sell_through_pct": 92.05
+  }
+ ],
+ "returns": {
+  "overall_return_rate_pct": 3.67,
+  "skus_over_10pct_returns": 70,
+  "share_of_returned_units_from_those_skus_pct": 65.1
+ }
+}

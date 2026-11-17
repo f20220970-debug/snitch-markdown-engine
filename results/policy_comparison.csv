@@ -1,0 +1,6 @@
+policy,avg_discount_pct,skus_marked_down_pct,gross_profit,units_sold,sell_through_pct,leftover_units,gross_profit_per_sku,vs_best_flat_per_sku,vs_no_markdown_per_sku
+no markdown,0.0,0.0,282678.99,580751.68,61.8,358913.32,145.79,-69.57,0.0
+flat 20% on everything,20.0,100.0,417583.23,889185.36,94.63,50479.64,215.36,0.0,69.57
+flat 40% on everything,40.0,100.0,85792.34,932783.16,99.27,6881.84,44.25,-171.11,-101.54
+rule of thumb: 30% on slow movers,30.0,100.0,269872.83,921817.47,98.1,17847.53,139.18,-76.18,-6.6
+markdown engine (fitted elasticity),14.57,93.81,506736.07,868461.93,92.42,71203.07,261.34,45.98,115.55

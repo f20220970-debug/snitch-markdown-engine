@@ -1,0 +1,5 @@
+model,mae_log_units,median_abs_pct_error,improvement_vs_sku_average_pct
+"SKU average (no price, no season)",1.047,65.195,0.0
++ seasonality only,1.012,70.239,3.4
++ one elasticity for all SKUs,0.872,61.508,16.754
++ per-SKU elasticity (shrunk),0.845,59.353,19.264
